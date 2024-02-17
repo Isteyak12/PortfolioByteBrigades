@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.background-container img, .background-container video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ensure the background covers the full viewport */
+    z-index: -1; /* Keep the background behind content */
+}
+
+.button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensure buttons are above the background */
+    display: flex;
+    flex-direction: column; /* Arrange buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+}
+
+button {
+    margin: 10px;
+    padding: 15px 30px; /* Increased padding for bigger buttons */
+    font-size: 18px; /* Increased font size for better visibility */
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    border: none;
+    color: black; /* Adjust color as needed */
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover effects */
+    border-radius: 20px; /* Rounded corners */
+}
+
+button:hover {
+    opacity: 0.7; /* More transparent on hover */
+}
+
+.text-center {
+    text-align: center;
+  }
