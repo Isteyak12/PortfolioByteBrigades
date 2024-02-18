@@ -4,9 +4,7 @@ import streamlit as st
 
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 profile_pic = "parin.jpg"
-# https://sdbncode.github.io/SdbnCode/
 
-# --- GENERAL SETTINGS ---
 PAGE_TITLE = "Digital CV | Parin"
 NAME = "Parin"
 DESCRIPTION = """
@@ -25,10 +23,8 @@ SOCIAL_MEDIA = {
 
 
 st.set_page_config(page_title=PAGE_TITLE)
-# st.title("Hello, Friends!")
 
 profile_pic = Image.open(profile_pic)
-# --HERO SECTION---
 col1, col2= st.columns(2, gap="small")
 with col2:
         st.image(profile_pic, width=230)
